@@ -25,7 +25,7 @@ colaboradores_2020(23) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(24) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(25) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(26) = struct('nombre', 'SN', 'email', '');
-colaboradores_2020(27) = struct('nombre', 'SN', 'email', '');
+colaboradores_2020(27) = struct('nombre', 'Demo', 'email', 'demo.utpl.edu.ec');
 
 
 disp(colaboradores_2020)
