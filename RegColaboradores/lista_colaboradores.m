@@ -1,5 +1,5 @@
 % Lista de estudiantes colaboradores, periodo 2020-2021
-colaboradores_2020(1) = struct('nombre', 'SN', 'email', '');
+colaboradores_2020(1) = struct('nombre', 'David Aguilar', 'email', 'daaguilar11@utpl.edu.ec');
 colaboradores_2020(2) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(3) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(4) = struct('nombre', 'Paul', 'email', 'panickar944@gmail.com');
