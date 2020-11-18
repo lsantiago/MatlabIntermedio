@@ -20,10 +20,49 @@ classdef Linea < handle
                 [obj.pntA.y, obj.pntB.y], "r*-");
         end
         
-        % mueva a la izquierda, n posiciones
-        % mueva a la derecha, ...
-        % muesva hacia abajo, ...
-        % mueva hacia arriba, ..
+        function movUp(obj,u)
+            close all
+            obj.pntA.y = obj.pntA.y + u;
+            obj.pntB.y = obj.pntB.y + u;
+            figure;
+            plot([obj.pntA.x, obj.pntB.x], ...
+                [obj.pntA.y, obj.pntB.y], "r*-");
+            
+            axis([-10 10 -10 10])
+        end
+      
+        function movDown(obj,u)
+            close all
+            obj.pntA.y = obj.pntA.y - u;
+            obj.pntB.y = obj.pntB.y - u;
+            figure;
+            plot([obj.pntA.x, obj.pntB.x], ...
+                [obj.pntA.y, obj.pntB.y], "r*-");
+            
+            axis([-10 10 -10 10])
+        end
+        
+        function movLft(obj,u)
+            close all
+            obj.pntA.x = obj.pntA.x - u;
+            obj.pntB.x = obj.pntB.x - u;
+            figure;
+            plot([obj.pntA.x, obj.pntB.x], ...
+                [obj.pntA.y, obj.pntB.y], "r*-");
+            
+            axis([-10 10 -10 10])
+        end
+        
+        function movRgt(obj,u)
+            close all
+            obj.pntA.x = obj.pntA.x + u;
+            obj.pntB.x = obj.pntB.x + u;
+            figure;
+            plot([obj.pntA.x, obj.pntB.x], ...
+                [obj.pntA.y, obj.pntB.y], "r*-");
+            
+            axis([-10 10 -10 10])
+        end
         
     end
 end
