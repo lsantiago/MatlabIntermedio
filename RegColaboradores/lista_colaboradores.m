@@ -20,6 +20,7 @@ colaboradores_2020(18) = struct('nombre', 'Cristian Gaona', 'email', 'crgaonas24
 colaboradores_2020(19) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(20) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(21) = struct('nombre', 'SN', 'email', '');
+colaboradores_2020(22) = struct('nombre', 'Brayan_Ordo�ez', 'email', 'bryan070ord@gmail.com');
 colaboradores_2020(22) = struct('nombre', 'SN', 'email', '');
 colaboradores_2020(23) = struct('nombre', 'Anthony Ortiz', 'email', 'ajortz4@utpl.edu.ec');
 colaboradores_2020(24) = struct('nombre', 'Danner Salinas', 'email', 'dannsalinas577@gmail.com');
