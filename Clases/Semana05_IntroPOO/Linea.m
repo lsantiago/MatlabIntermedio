@@ -16,52 +16,35 @@ classdef Linea < handle
         end
         
         function graficar(obj)
+            close all
+            figure;
             plot([obj.pntA.x, obj.pntB.x], ...
                 [obj.pntA.y, obj.pntB.y], "r*-");
+            axis([-10 10 -10 10])
         end
         
         function movUp(obj,u)
-            close all
             obj.pntA.y = obj.pntA.y + u;
             obj.pntB.y = obj.pntB.y + u;
-            figure;
-            plot([obj.pntA.x, obj.pntB.x], ...
-                [obj.pntA.y, obj.pntB.y], "r*-");
-            
-            axis([-10 10 -10 10])
+            obj.graficar();
         end
       
         function movDown(obj,u)
-            close all
             obj.pntA.y = obj.pntA.y - u;
             obj.pntB.y = obj.pntB.y - u;
-            figure;
-            plot([obj.pntA.x, obj.pntB.x], ...
-                [obj.pntA.y, obj.pntB.y], "r*-");
-            
-            axis([-10 10 -10 10])
+            obj.graficar();
         end
         
         function movLft(obj,u)
-            close all
             obj.pntA.x = obj.pntA.x - u;
             obj.pntB.x = obj.pntB.x - u;
-            figure;
-            plot([obj.pntA.x, obj.pntB.x], ...
-                [obj.pntA.y, obj.pntB.y], "r*-");
-            
-            axis([-10 10 -10 10])
+            obj.graficar();
         end
         
         function movRgt(obj,u)
-            close all
             obj.pntA.x = obj.pntA.x + u;
             obj.pntB.x = obj.pntB.x + u;
-            figure;
-            plot([obj.pntA.x, obj.pntB.x], ...
-                [obj.pntA.y, obj.pntB.y], "r*-");
-            
-            axis([-10 10 -10 10])
+            obj.graficar();
         end
         
     end
